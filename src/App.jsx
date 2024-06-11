@@ -1,7 +1,8 @@
-import "./App.scss";
+import "./scss/all.scss";
+import Header from "./components/header/Header";
 
 function App() {
-  return <></>;
+  return <Header />;
 }
 
 export default App;
