@@ -1,0 +1,115 @@
+.root {
+  background-color: #fff;
+  padding: 14px 0;
+  border-radius: 0 0 50px 50px;
+
+  .container {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .navigation {
+        .list {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          .link {
+            .item {
+              font-weight: 500;
+              color: #404040;
+            }
+          }
+        }
+      }
+
+      .search_body {
+        .form_search {
+          .label {
+            display: none;
+          }
+
+          .form_search_flex {
+            display: flex;
+            align-items: center;
+            padding: 14px 15px;
+
+            border-radius: 2000px;
+            background-color: #f3eaf3;
+
+            .search_input {
+              background-color: inherit;
+            }
+
+            .btn_search {
+              display: flex;
+              padding-top: 2px;
+              justify-content: center;
+              align-items: center;
+
+              background-color: inherit;
+
+              .click_search {
+                background-color: inherit;
+              }
+            }
+          }
+        }
+      }
+
+      .contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .phones {
+          display: flex;
+          padding: 13px 14px;
+
+          border-radius: 2000px;
+          background-color: #7e2b86;
+
+          .call {
+            color: #fff;
+          }
+
+          .select_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .btn_call {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-left: 7px;
+
+              background-color: #7e2b86;
+            }
+          }
+        }
+
+        .cityes {
+          margin-top: 10px;
+          .select_cityes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #fff;
+
+            .arrowBtn {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
