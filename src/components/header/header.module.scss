@@ -36,7 +36,7 @@
           .form_search_flex {
             display: flex;
             align-items: center;
-            padding: 14px 15px;
+            padding: 9px 15px;
 
             border-radius: 2000px;
             background-color: #f3eaf3;
@@ -47,13 +47,16 @@
 
             .btn_search {
               display: flex;
-              padding-top: 2px;
               justify-content: center;
               align-items: center;
 
               background-color: inherit;
 
               .click_search {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px;
                 background-color: inherit;
               }
             }
