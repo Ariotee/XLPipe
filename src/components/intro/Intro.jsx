@@ -1,9 +1,11 @@
+import { CountWork } from "../deco-comp/DecoComp";
 import style from "./intro.module";
 
 const Intro = () => {
   return (
     <div className={style.root}>
       <div className={style.intro}>
+        <CountWork />
         <div className={style.container}>
           <div className={style.RSide}>
             <div className={style.intro_title}>
