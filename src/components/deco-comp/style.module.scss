@@ -1,0 +1,26 @@
+.countWork {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 290px;
+  gap: 30px;
+  padding: 13px 0;
+  top: 150px;
+  left: 100px;
+
+  border-radius: 200px;
+  background-color: #ba77d3;
+  &_number {
+    font-weight: bold;
+    font-size: 34px;
+    color: #fff;
+  }
+
+  &_title {
+    width: 135px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+  }
+}
