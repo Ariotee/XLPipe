@@ -1,0 +1,51 @@
+.root {
+  .intro {
+    padding: 320px 0 249px;
+    background-image: url(../../assets/img/bg-main.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: cover;
+
+    .container {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 0 10px;
+
+      .RSide {
+        max-width: 575px;
+        margin-left: 170px;
+        .intro_title {
+          .title_h1 {
+            font-size: 48px;
+            color: #fff;
+            font-weight: 900;
+            margin: 0;
+            padding: 0;
+          }
+        }
+
+        .intro_subtitle {
+          max-width: 350px;
+          margin: 30px 0 45px;
+          .subtitle_p {
+            font-weight: normal;
+            font-size: 16px;
+            color: #fff;
+          }
+        }
+
+        .intro_order {
+          .order_btn {
+            padding: 16px 50px;
+
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 200px;
+            background-color: #ba77d3;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
