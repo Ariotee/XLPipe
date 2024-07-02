@@ -1,11 +1,25 @@
+import React from "react";
+
 import style from "./header.module.scss";
 
 import Logotype from "../../assets/svg/Logotype.svg";
 import SearchIcon from "../../assets/svg/Search.svg";
-import ArrowDown from "../../assets/svg/ArrowDownWhite.svg";
-import ArrowUp from "../../assets/svg/ArrowUpBlack.svg";
+import { ArrowDownBlack, ArrowDownWhite, ArrowUpBlack } from "../SvgIcons";
+import Modal from "../modal/Modal";
 
 const Header = () => {
+  const [currentLocation, setCurrentLocation] = React.useState("Москва");
+
+  const [closeLocation, setCloseLocation] = React.useState(false);
+
+  const onClickLocation = () => {
+    setCloseLocation(true);
+
+    if (closeLocation) {
+      setCloseLocation(false);
+    }
+  };
+
   return (
     <div className={style.root}>
       <div className={style.container}>
@@ -70,21 +84,22 @@ const Header = () => {
               </a>
               <div className={style.select_btn}>
                 <button className={style.btn_call}>
-                  <img src={ArrowDown} alt="Выбор номера" />
+                  <ArrowDownWhite />
                 </button>
               </div>
             </div>
 
             <div className={style.cityes}>
-              <button className={style.select_cityes}>
-                Москва
+              <button className={style.select_cityes} onClick={onClickLocation}>
+                {currentLocation}
                 <div className={style.arrowBtn}>
-                  <img src={ArrowUp} alt="Выбор города" />
+                  {!closeLocation ? <ArrowDownBlack /> : <ArrowUpBlack />}
                 </div>
               </button>
             </div>
           </div>
         </header>
+        <Modal closeLocation={closeLocation} />
       </div>
     </div>
   );
