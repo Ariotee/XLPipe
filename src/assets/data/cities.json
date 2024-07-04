@@ -1,0 +1,30 @@
+[
+  {
+    "id": 0,
+    "city": "Москва",
+    "exist": "../../assets/svg/exist.svg"
+  },
+  {
+    "id": 1,
+    "city": "Москва"
+  },
+  {
+    "id": 2,
+    "city": "Москва",
+    "exist": "../../assets/svg/exist.svg"
+  },
+  {
+    "id": 3,
+    "city": "Москва"
+  },
+  {
+    "id": 4,
+    "city": "Москва",
+    "exist": "../../assets/svg/exist.svg"
+  },
+  {
+    "id": 5,
+    "city": "Москва",
+    "exist": "../../assets/svg/exist.svg"
+  }
+]

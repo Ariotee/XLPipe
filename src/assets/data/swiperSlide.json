@@ -1,0 +1,17 @@
+[
+  {
+    "id": 0,
+    "alt": "Billy",
+    "img": "../../assets/img/billy.jpg"
+  },
+  {
+    "id": 1,
+    "alt": "Ghoust",
+    "img": "../../assets/img/ghoust.jpg"
+  },
+  {
+    "id": 2,
+    "alt": "Ghoust",
+    "img": "../../assets/img/ghoust.jpg"
+  }
+]

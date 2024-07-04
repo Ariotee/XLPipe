@@ -1,0 +1,52 @@
+.root {
+  position: absolute;
+  top: 110px;
+  left: 980px;
+  width: 216px;
+  height: 226px;
+  padding: 20px 30px;
+  overflow: hidden;
+  // overflow-y: scroll;
+
+  background-color: #fff;
+  border-radius: 20px;
+
+  .form {
+    display: flex;
+    align-items: center;
+    padding: 10px 17px;
+    margin-bottom: 15px;
+
+    border-radius: 2000px;
+    background-color: #f3eaf3;
+    .input {
+      width: 80%;
+      background-color: inherit;
+    }
+  }
+
+  .list {
+    &_cities {
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 17px;
+        color: #404040;
+      }
+
+      .item:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      .activeCity {
+        font-weight: 600;
+        font-size: 17px;
+        color: #404040;
+      }
+    }
+  }
+}

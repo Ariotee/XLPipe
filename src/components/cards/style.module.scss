@@ -1,0 +1,40 @@
+.root {
+  max-width: 305px;
+  .content {
+    .img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 40px;
+      margin-left: 52px;
+      width: 247px;
+      height: 137px;
+      background-color: #7e2b86;
+    }
+
+    .title {
+      margin: 20px 0 30px 52px;
+
+      font-weight: 700;
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
+        .svg {
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import "./scss/all.scss";
+
 import Header from "./components/header/Header";
-import Intro from "./components/intro/Intro";
-import AboutUs from "./components/aboutUs/AboutUs";
+import HomePage from "./pages/Home";
 
 function App() {
   return (
@@ -9,10 +9,7 @@ function App() {
       <div className="pos-r">
         <Header />
       </div>
-      <Intro />
-      <div>
-        <AboutUs />
-      </div>
+      <HomePage />
     </>
   );
 }
