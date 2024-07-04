@@ -1,0 +1,53 @@
+.root {
+  padding: 135px 0;
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    .title {
+      font-weight: 700;
+      font-size: 36px;
+      color: #404040;
+    }
+    .content {
+      display: flex;
+      ///что бы по разные штуки сделать
+      justify-content: space-between;
+      align-items: center;
+      margin: 70px 0 65px;
+
+      &_text {
+        max-width: 695px;
+
+        .text_p {
+          font-weight: 300;
+          font-size: 20px;
+          color: #000;
+        }
+      }
+
+      &_img {
+        border-radius: 40px;
+        width: 357px;
+        height: 379px;
+        background-color: #d9d9d9;
+      }
+    }
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      .order {
+        width: 242px;
+        height: 60px;
+        background-color: rgb(129, 57, 200);
+        color: #fff;
+        border-radius: 30px;
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+  }
+}

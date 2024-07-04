@@ -3,7 +3,7 @@ import style from "./style.module";
 
 const ComparFloor = () => {
   return (
-    <div className={style.root}>
+    <section className={style.root}>
       <div className={style.container}>
         <h2 className={style.title}>ОТЛИЧИЯ ОТ ДРУГИХ ТЕПЛЫХ ПОЛОВ</h2>
 
@@ -13,7 +13,7 @@ const ComparFloor = () => {
           <FloorComparCard />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
