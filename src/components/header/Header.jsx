@@ -1,11 +1,16 @@
 import React from "react";
 
+//Libs
+import { Link } from "react-router-dom";
+
+//Styles
 import style from "./header.module.scss";
 
+//Components
+import Modal from "../modal/Modal";
 import Logotype from "../../assets/svg/Logotype.svg";
 import SearchIcon from "../../assets/svg/Search.svg";
 import { ArrowDownBlack, ArrowDownWhite, ArrowUpBlack } from "../SvgIcons";
-import Modal from "../modal/Modal";
 
 const Header = () => {
   const [currentLocation, setCurrentLocation] = React.useState("Москва");
@@ -30,12 +35,12 @@ const Header = () => {
 
           <nav className={style.navigation}>
             <ul className={style.list}>
-              <a href="#" className={style.link}>
+              <Link to={"/"} className={style.link}>
                 <li className={style.item}>Главная</li>
-              </a>
-              <a href="#" className={style.link}>
+              </Link>
+              <Link to={"/catalog"} className={style.link}>
                 <li className={style.item}>Каталог</li>
-              </a>
+              </Link>
               <a href="#" className={style.link}>
                 <li className={style.item}>Акции</li>
               </a>
@@ -52,7 +57,7 @@ const Header = () => {
                 <li className={style.item}>Отзывы</li>
               </a>
               <a href="#" className={style.link}>
-                <li className={style.item}>Конткаты</li>
+                <li className={style.item}>Контакты</li>
               </a>
             </ul>
           </nav>

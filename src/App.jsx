@@ -1,7 +1,10 @@
+import { Route, Routes } from "react-router-dom";
+
 import "./scss/all.scss";
 
 import Header from "./components/header/Header";
 import HomePage from "./pages/Home";
+import Catalog from "./pages/Catalog";
 
 function App() {
   return (
@@ -9,7 +12,11 @@ function App() {
       <div className="pos-r">
         <Header />
       </div>
-      <HomePage />
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/catalog" element={<Catalog />} />
+      </Routes>
     </>
   );
 }
